@@ -57,12 +57,12 @@ http://localhost:3000`
 
 Authenticates a user by email and password and returns a Token
 
-**Path**: `/authenticate`
-**Method**: `POST`
-**Params**:
- - email: The users email (required)
- - password: The users password (required)
-**Response**
+* **Path**: `/authenticate`
+* **Method**: `POST`
+* **Params**:
+  - email: The users email (required)
+  - password: The users password (required)
+* **Response**
   - token: expected token to authenticate on the API
 
 
@@ -70,13 +70,13 @@ Authenticates a user by email and password and returns a Token
 
 Returns all the information needed for the given CEP
 
-**Path**: `/authenticate`
-**Method**: `POST`
-**Headers**:
+* **Path**: `/authenticate`
+* **Method**: `POST`
+* **Headers**:
   - Authenticate: `Bearer #{Token}`
-**Params**:
- - zip_code: the CEP you want to retrieve information (required)
-**Response**
+* **Params**:
+  - zip_code: the CEP you want to retrieve information (required)
+* **Response**
   - address: the address of given CEP
   - district: the district of given CEP
   - code: the code of given CEP
